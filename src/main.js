@@ -36,12 +36,34 @@ document.querySelector('#app').innerHTML = `
         <img src="/assets/brand-mark.svg" alt="" width="21" height="29">
       </a>
 
-      <nav class="hero__nav" aria-label="Main navigation">
-        <a href="#work">work</a>
-        <a href="#services">services</a>
-        <a href="#team">team</a>
-        <a href="#contact">contact</a>
-      </nav>
+      <button
+        class="hero__menu-toggle"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="site-menu"
+      >
+        <span class="hero__menu-line"></span>
+        <span class="hero__menu-line"></span>
+        <span class="hero__menu-line"></span>
+      </button>
+
+      <div
+        class="site-menu"
+        id="site-menu"
+        role="dialog"
+        aria-modal="true"
+        aria-label="Site navigation"
+        aria-hidden="true"
+        inert
+      >
+        <nav class="site-menu__nav" aria-label="Main navigation">
+          <a class="site-menu__link" href="#work" style="--menu-index: 0">work</a>
+          <a class="site-menu__link" href="#services" style="--menu-index: 1">services</a>
+          <a class="site-menu__link" href="#team" style="--menu-index: 2">team</a>
+          <a class="site-menu__link" href="#contact" style="--menu-index: 3">contact</a>
+        </nav>
+      </div>
     </header>
 
     <div class="hero__content" data-node-id="2201:801">
@@ -428,6 +450,56 @@ if (window.location.hash) {
   const initialSection = document.querySelector(window.location.hash)
   if (initialSection) requestAnimationFrame(() => initialSection.scrollIntoView())
 }
+
+const menuToggle = document.querySelector('.hero__menu-toggle')
+const siteMenu = document.querySelector('.site-menu')
+const siteMenuLinks = [...siteMenu.querySelectorAll('a[href]')]
+let isMenuOpen = false
+
+const setMenuState = (open) => {
+  isMenuOpen = open
+  menuToggle.setAttribute('aria-expanded', String(open))
+  menuToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu')
+  siteMenu.setAttribute('aria-hidden', String(!open))
+  siteMenu.inert = !open
+  siteMenu.classList.toggle('is-open', open)
+  document.documentElement.classList.toggle('menu-open', open)
+
+  if (open) {
+    window.requestAnimationFrame(() => {
+      if (isMenuOpen) siteMenuLinks[0]?.focus()
+    })
+  } else {
+    menuToggle.focus()
+  }
+}
+
+menuToggle.addEventListener('click', () => setMenuState(!isMenuOpen))
+
+siteMenuLinks.forEach((link) => {
+  link.addEventListener('click', () => setMenuState(false))
+})
+
+document.addEventListener('keydown', (event) => {
+  if (!isMenuOpen) return
+
+  if (event.key === 'Escape') {
+    event.preventDefault()
+    setMenuState(false)
+    return
+  }
+
+  if (event.key !== 'Tab') return
+
+  const focusLoop = [menuToggle, ...siteMenuLinks]
+  const currentIndex = focusLoop.indexOf(document.activeElement)
+  const nextIndex = event.shiftKey
+    ? (currentIndex <= 0 ? focusLoop.length - 1 : currentIndex - 1)
+    : (currentIndex === -1 || currentIndex === focusLoop.length - 1 ? 0 : currentIndex + 1)
+
+  event.preventDefault()
+  focusLoop[nextIndex].focus()
+})
 
 const heroVideo = document.querySelector('.hero__video')
 
