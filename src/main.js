@@ -6,6 +6,16 @@ import '@fontsource/geist-sans/latin-700.css'
 import '@fontsource/anton/latin-400.css'
 import './style.css'
 
+const antonFontReady = document.fonts?.load('400 5.25rem Anton')
+
+if (antonFontReady) {
+  antonFontReady
+    .then(() => document.documentElement.classList.add('anton-ready'))
+    .catch(() => document.documentElement.classList.add('anton-ready'))
+} else {
+  document.documentElement.classList.add('anton-ready')
+}
+
 document.querySelector('#app').innerHTML = `
   <main>
   <section class="hero" id="top" data-node-id="2197:785">
@@ -16,7 +26,6 @@ document.querySelector('#app').innerHTML = `
       loop
       playsinline
       preload="auto"
-      poster="/assets/hero-fallback.png"
       aria-hidden="true"
     >
       <source src="/assets/render%203.mp4" type="video/mp4">
@@ -98,7 +107,6 @@ document.querySelector('#app').innerHTML = `
         <span class="intro-reveal__word" aria-hidden="true">impact</span>
         <span class="intro-reveal__word" aria-hidden="true">has</span>
         <span class="intro-reveal__word" aria-hidden="true">been</span>
-        <br aria-hidden="true">
         <span class="intro-reveal__word" aria-hidden="true">beyond</span>
         <span class="intro-reveal__word" aria-hidden="true">impressive.</span>
       </p>
@@ -116,7 +124,7 @@ document.querySelector('#app').innerHTML = `
             <h3>Shukar Hai</h3>
             <p>Social Enterprise</p>
           </div>
-          <blockquote>“It never felt like we were simply getting a website developed, it felt like we had a partner equally invested in building something meaningful. ByteCorp took the time to deeply understand our mission, and every strategy call reflected clarity and genuine involvement.”</blockquote>
+          <blockquote class="text-measure">“It never felt like we were simply getting a website developed, it felt like we had a partner equally invested in building something meaningful. ByteCorp took the time to deeply understand our mission, and every strategy call reflected clarity and genuine involvement.”</blockquote>
         </div>
       </article>
 
@@ -155,7 +163,7 @@ document.querySelector('#app').innerHTML = `
             <h3>Autilent</h3>
             <p>Automotive</p>
           </div>
-          <blockquote>“It never felt like we were simply getting a website developed, it felt like we had a partner equally invested in building something meaningful. ByteCorp took the time to deeply understand our mission, and every strategy call reflected clarity and genuine involvement.”</blockquote>
+          <blockquote class="text-measure">“It never felt like we were simply getting a website developed, it felt like we had a partner equally invested in building something meaningful. ByteCorp took the time to deeply understand our mission, and every strategy call reflected clarity and genuine involvement.”</blockquote>
         </div>
       </article>
 
@@ -229,15 +237,15 @@ document.querySelector('#app').innerHTML = `
           <div class="art-motion__copy" aria-live="polite">
             <article class="art-motion__project-copy is-active" data-project="0">
               <h3>FRCTN</h3>
-              <p>We shaped FRCTN’s brand identity, visual language, and motion system to turn complex AI thinking into a bold, clear, and cohesive digital experience.</p>
+              <p class="text-measure">We shaped FRCTN’s brand identity, visual language, and motion system to turn complex AI thinking into a bold, clear, and cohesive digital experience.</p>
             </article>
             <article class="art-motion__project-copy" data-project="1">
               <h3>Shukar Hai</h3>
-              <p>Shukar Hai turns gratitude into meaningful acts of sharing. We redesigned the platform around clearer product journeys, stronger trust, and a warmer digital experience across Aqeeqah and Dawat in a Box.</p>
+              <p class="text-measure">Shukar Hai turns gratitude into meaningful acts of sharing. We redesigned the platform around clearer product journeys, stronger trust, and a warmer digital experience across Aqeeqah and Dawat in a Box.</p>
             </article>
             <article class="art-motion__project-copy" data-project="2">
               <h3>Autilent</h3>
-              <p>We shaped Autilent’s brand and digital experience around clarity, trust, and intelligent automation — turning a complex technology proposition into a focused and approachable visual system.</p>
+              <p class="text-measure">We shaped Autilent’s brand and digital experience around clarity, trust, and intelligent automation — turning a complex technology proposition into a focused and approachable visual system.</p>
             </article>
           </div>
         </div>
@@ -276,7 +284,7 @@ document.querySelector('#app').innerHTML = `
           </span>
         </h2>
 
-        <p class="coherence__copy" data-node-id="2241:10229">
+        <p class="coherence__copy text-measure" data-node-id="2241:10229">
           <span class="coherence__copy-line">One team designs your product. Another writes your pitch. A third runs your ads.</span>
           <span class="coherence__copy-line">When they don't agree, customers notice before you do and doubt becomes 'no.'</span>
           <span class="coherence__copy-line">That's a coherence problem. It's exactly what an audit is built to find.</span>
@@ -301,7 +309,7 @@ document.querySelector('#app').innerHTML = `
     <article class="discipline-card discipline-card--experience" id="experience-design" style="--card-index: 1" data-node-id="2113:585">
       <div class="discipline-card__meta" data-node-id="2113:5788">
         <div class="discipline-card__number">01</div>
-        <p>Design without research is guessing. We figure out what's worth building in your product before anyone opens a design file. Then we make it real, while measuring everything.</p>
+        <p class="text-measure">Design without research is guessing. We figure out what's worth building in your product before anyone opens a design file. Then we make it real, while measuring everything.</p>
         <ul class="discipline-card__tags" aria-label="Experience design services">
           <li>UX Research</li><li>Service Design</li><li>Product</li><li>UX/UI</li><li>Design Systems</li><li>Usability</li>
         </ul>
@@ -316,7 +324,7 @@ document.querySelector('#app').innerHTML = `
     <article class="discipline-card discipline-card--brand" id="brand-creative" style="--card-index: 2" data-node-id="2113:5811">
       <div class="discipline-card__meta" data-node-id="2113:5813">
         <div class="discipline-card__number">02</div>
-        <p>Brand that sticks. Identity that travels. Voice that holds up whether it's a pitch deck, a product screen, or a press release.</p>
+        <p class="text-measure">Brand that sticks. Identity that travels. Voice that holds up whether it's a pitch deck, a product screen, or a press release.</p>
         <ul class="discipline-card__tags" aria-label="Brand and creative services">
           <li>Strategy</li><li>Visual Identity</li><li>Naming</li><li>Art Direction</li><li>Bilingual Copy</li><li>Editorial</li>
         </ul>
@@ -331,7 +339,7 @@ document.querySelector('#app').innerHTML = `
     <article class="discipline-card discipline-card--content" id="content-production" style="--card-index: 3" data-node-id="2113:8837">
       <div class="discipline-card__meta" data-node-id="2113:8839">
         <div class="discipline-card__number">03</div>
-        <p>An in-house studio, not a brief sent to vendors. Product demos, launch videos, social, and motion produced on the same floor as strategy and design.</p>
+        <p class="text-measure">An in-house studio, not a brief sent to vendors. Product demos, launch videos, social, and motion produced on the same floor as strategy and design.</p>
         <ul class="discipline-card__tags" aria-label="Content and production services">
           <li>Brand Film</li><li>Social</li><li>Photography</li><li>Motion</li><li>Post</li><li>Always-on Systems</li>
         </ul>
@@ -346,7 +354,7 @@ document.querySelector('#app').innerHTML = `
     <article class="discipline-card discipline-card--growth" id="growth-media" style="--card-index: 4" data-node-id="2113:11863">
       <div class="discipline-card__meta" data-node-id="2113:11865">
         <div class="discipline-card__number">04</div>
-        <p>The engine. Media buying and performance, proven on accounts scaling fast. Built into tech brands and products, not bolted on after.</p>
+        <p class="text-measure">The engine. Media buying and performance, proven on accounts scaling fast. Built into tech brands and products, not bolted on after.</p>
         <ul class="discipline-card__tags" aria-label="Growth and media services">
           <li>Media Strategy</li><li>Performance</li><li>Paid</li><li>SEO</li><li>Automation</li><li>Measurement</li>
         </ul>
