@@ -36,23 +36,76 @@ document.querySelector('#app').innerHTML = `
     </header>
 
     <div class="hero__content" data-node-id="2201:801">
-      <h1 aria-label="We fix where tech brands lose customers, bleed conversions, lose deals, or confuse the people.">
-        <span>We fix where</span> <span>tech brands</span>
-        <span class="hero__tagline-ending" aria-hidden="true">lose customers</span>
-      </h1>
+      <h1 data-node-id="2235:484">We find where tech brands lose revenue</h1>
 
       <a class="hero__cta" href="#contact" data-node-id="2201:803">
         <span>Get your brand audited</span>
         <img src="/assets/arrow-right.svg" alt="" width="24" height="24">
       </a>
     </div>
+
+    <p class="hero__affiliation" data-node-id="2235:476">
+      Part of ByteCorp.io. Focused on experience.
+    </p>
   </section>
 
-  <section class="selected-work" id="work" data-node-id="2203:824" aria-labelledby="selected-work-title">
-    <h2 class="selected-work__intro" id="selected-work-title" data-node-id="2203:944">
-      We spotted the gap and closed it. Our impact is Beyond Impressive
-    </h2>
+  <section class="intro-reveal" data-node-id="2239:5321" aria-labelledby="intro-reveal-copy">
+    <div class="intro-reveal__sticky">
+      <p
+        class="intro-reveal__copy"
+        id="intro-reveal-copy"
+        data-node-id="2239:5322"
+        aria-label="We help tech brands find what's holding growth back and fix it through brand strategy, identity systems, high-converting websites, and scalable product design. 20+ brands in, the impact has been beyond impressive."
+      >
+        <span class="intro-reveal__word" aria-hidden="true">We</span>
+        <span class="intro-reveal__word" aria-hidden="true">help</span>
+        <span class="intro-reveal__word" aria-hidden="true">tech</span>
+        <span class="intro-reveal__word" aria-hidden="true">brands</span>
+        <span class="intro-reveal__shape intro-reveal__shape--arch" aria-hidden="true" data-node-id="2239:5352">
+          <img src="/assets/intro-reveal-arch.svg" alt="" width="109.174" height="54">
+        </span>
+        <span class="intro-reveal__word" aria-hidden="true">find</span>
+        <span class="intro-reveal__word" aria-hidden="true">what's</span>
+        <span class="intro-reveal__word" aria-hidden="true">holding</span>
+        <br aria-hidden="true">
+        <span class="intro-reveal__word" aria-hidden="true">growth</span>
+        <span class="intro-reveal__shape" aria-hidden="true" data-node-id="2239:5357">
+          <img src="/assets/intro-reveal-arrows.svg" alt="" width="54.0001" height="54.0001">
+        </span>
+        <span class="intro-reveal__word" aria-hidden="true">back</span>
+        <span class="intro-reveal__word" aria-hidden="true">and</span>
+        <span class="intro-reveal__word" aria-hidden="true">fix</span>
+        <span class="intro-reveal__word" aria-hidden="true">it</span>
+        <span class="intro-reveal__word" aria-hidden="true">through</span>
+        <span class="intro-reveal__word" aria-hidden="true">brand</span>
+        <span class="intro-reveal__word" aria-hidden="true">strategy,</span>
+        <span class="intro-reveal__word" aria-hidden="true">identity</span>
+        <span class="intro-reveal__word" aria-hidden="true">systems,</span>
+        <span class="intro-reveal__word" aria-hidden="true">high-converting</span>
+        <span class="intro-reveal__word" aria-hidden="true">websites,</span>
+        <span class="intro-reveal__word" aria-hidden="true">and</span>
+        <span class="intro-reveal__word" aria-hidden="true">scalable</span>
+        <span class="intro-reveal__word" aria-hidden="true">product</span>
+        <span class="intro-reveal__word" aria-hidden="true">design.</span>
+        <span class="intro-reveal__word" aria-hidden="true">20+</span>
+        <span class="intro-reveal__word" aria-hidden="true">brands</span>
+        <span class="intro-reveal__word" aria-hidden="true">in</span>
+        <span class="intro-reveal__shape" aria-hidden="true" data-node-id="2239:5327">
+          <img src="/assets/intro-reveal-dots.svg" alt="" width="128.864" height="54">
+        </span>
+        <span class="intro-reveal__word" aria-hidden="true">,</span>
+        <span class="intro-reveal__word" aria-hidden="true">the</span>
+        <span class="intro-reveal__word" aria-hidden="true">impact</span>
+        <span class="intro-reveal__word" aria-hidden="true">has</span>
+        <span class="intro-reveal__word" aria-hidden="true">been</span>
+        <br aria-hidden="true">
+        <span class="intro-reveal__word" aria-hidden="true">beyond</span>
+        <span class="intro-reveal__word" aria-hidden="true">impressive.</span>
+      </p>
+    </div>
+  </section>
 
+  <section class="selected-work" id="work" data-node-id="2203:824" aria-label="Selected work">
     <div class="selected-work__list">
       <article class="work-card work-card--featured" data-node-id="2203:827">
         <div class="work-card__media work-card__media--wide" data-node-id="2203:828">
@@ -135,9 +188,17 @@ document.querySelector('#app').innerHTML = `
   </section>
 
   <section class="art-motion" id="services" data-node-id="2206:9080" aria-labelledby="art-motion-title">
-    <div class="art-motion__sticky-panel" data-node-id="2206:8984">
-      <h2 class="sr-only" id="art-motion-title">Our art in motion</h2>
-      <img class="art-motion__lockup" src="/assets/motion/art-in-motion.png" alt="" width="679" height="240" loading="lazy" decoding="async" data-node-id="2206:8985">
+    <div class="art-motion__sticky-panel" data-node-id="2240:5409">
+      <h2 class="art-motion__lockup" id="art-motion-title" data-node-id="2240:5410">
+        <span class="art-motion__lockup-line" data-node-id="2240:5411">
+          <span data-node-id="2240:5412">Our art</span>
+          <img src="/assets/motion/art-motion-loops.svg" alt="" width="113" height="44" data-node-id="2240:5413">
+        </span>
+        <span class="art-motion__lockup-line art-motion__lockup-line--second" data-node-id="2240:5414">
+          <img src="/assets/motion/art-motion-zigzag.svg" alt="" width="96.564" height="38.318" data-node-id="2240:5415">
+          <span data-node-id="2240:5420">In motion</span>
+        </span>
+      </h2>
     </div>
 
     <div class="art-motion__story">
@@ -181,49 +242,47 @@ document.querySelector('#app').innerHTML = `
           </div>
         </div>
 
-        <div class="art-motion__pagination" aria-hidden="true">
-          <span class="is-active"></span>
-          <span></span>
-          <span></span>
+        <div class="art-motion__pagination" aria-label="Choose featured project">
+          <button class="is-active" type="button" data-project="0" aria-label="Show FRCTN project" aria-current="true"></button>
+          <button type="button" data-project="1" aria-label="Show Shukar Hai project"></button>
+          <button type="button" data-project="2" aria-label="Show Autilent project"></button>
         </div>
       </div>
     </div>
     <div class="art-motion__exit" aria-hidden="true"></div>
   </section>
 
-  <section class="coherence" id="coherence" data-node-id="2214:52283" aria-labelledby="coherence-title">
+  <section class="coherence" id="coherence" data-node-id="2241:5422" aria-labelledby="coherence-title">
     <div class="coherence__sticky">
-      <div class="coherence__content" data-node-id="2214:52285">
-        <h2 class="coherence__headline" id="coherence-title" data-node-id="2214:57089">
+      <div class="coherence__content" data-node-id="2242:10241">
+        <h2 class="coherence__headline" id="coherence-title" data-node-id="2242:10239">
           <span class="coherence__line">
             <span class="coherence__reveal">Tech</span>
             <span class="coherence__reveal">brands</span>
-            <span class="coherence__dots coherence__reveal" aria-hidden="true"><img src="/assets/coherence-dots.svg" alt="" width="232" height="89"></span>
+            <span class="coherence__asset coherence__reveal" aria-hidden="true" data-node-id="2241:10227"><img src="/assets/coherence-rings.svg" alt="" width="114.697" height="44"></span>
             <span class="coherence__reveal">don’t</span>
-          </span>
-          <span class="coherence__line">
             <span class="coherence__reveal">have</span>
             <span class="coherence__reveal">a</span>
             <span class="coherence__reveal">design</span>
             <span class="coherence__reveal">problem.</span>
-            <span class="coherence__reveal">They</span>
           </span>
           <span class="coherence__line">
+            <span class="coherence__reveal">They</span>
             <span class="coherence__reveal">have</span>
             <span class="coherence__reveal">a</span>
-            <span class="coherence__scribble coherence__reveal" aria-hidden="true"><img src="/assets/coherence-scribble.svg" alt="" width="139" height="113"></span>
+            <span class="coherence__asset coherence__reveal" aria-hidden="true" data-node-id="2242:10238"><img src="/assets/coherence-diamond.svg" alt="" width="56.891" height="45"></span>
             <span class="coherence__reveal">coherence</span>
-          </span>
-          <span class="coherence__line">
             <span class="coherence__reveal">problem.</span>
           </span>
         </h2>
 
-        <p class="coherence__copy" data-node-id="2214:57090">
-          One team designs your product. Another writes your pitch. A third runs your ads. When they don't agree, customers notice before you do and doubt becomes 'no.' That's a <strong>coherence problem.</strong> It's exactly what an audit is built to find.
+        <p class="coherence__copy" data-node-id="2241:10229">
+          <span class="coherence__copy-line">One team designs your product. Another writes your pitch. A third runs your ads.</span>
+          <span class="coherence__copy-line">When they don't agree, customers notice before you do and doubt becomes 'no.'</span>
+          <span class="coherence__copy-line">That's a coherence problem. It's exactly what an audit is built to find.</span>
         </p>
 
-        <a class="coherence__cta" href="#contact" data-node-id="2214:57091">
+        <a class="coherence__cta" href="#contact" data-node-id="2241:10230">
           <span>GET YOUR BRAND AUDITED</span>
           <img src="/assets/coherence-arrow-right.svg" alt="" width="24" height="24">
         </a>
@@ -232,8 +291,11 @@ document.querySelector('#app').innerHTML = `
   </section>
 
   <section class="disciplines" id="disciplines" data-node-id="2113:582" aria-labelledby="disciplines-title">
-    <header class="disciplines__intro" data-node-id="2136:423">
-      <h2 id="disciplines-title" data-node-id="2136:424">Everything a tech brand needs. Nothing it doesn't</h2>
+    <header class="disciplines__intro" data-node-id="2243:10259">
+      <h2 id="disciplines-title" data-node-id="2245:10264">
+        <span data-node-id="2243:10260">Everything a tech brand needs. Nothing it doesn't</span>
+        <img src="/assets/disciplines/intro-mark.svg" alt="" width="54" height="54" data-node-id="2245:10262">
+      </h2>
     </header>
 
     <article class="discipline-card discipline-card--experience" id="experience-design" style="--card-index: 1" data-node-id="2113:585">
@@ -360,27 +422,13 @@ if (window.location.hash) {
 }
 
 const heroVideo = document.querySelector('.hero__video')
-const taglineEnding = document.querySelector('.hero__tagline-ending')
-const taglineEndings = [
-  'lose customers',
-  'bleed conversions',
-  'lose deals',
-  'confuse the people',
-]
-let taglineIndex = 0
-
-window.setInterval(() => {
-  if (document.hidden) return
-  taglineIndex = (taglineIndex + 1) % taglineEndings.length
-  taglineEnding.textContent = taglineEndings[taglineIndex]
-}, 2000)
 
 const artMotion = document.querySelector('.art-motion')
 const artStory = document.querySelector('.art-motion__story')
 const artCanvas = document.querySelector('.art-motion__canvas')
 const artProjects = [...document.querySelectorAll('.motion-card__project')]
 const artProjectCopies = [...document.querySelectorAll('.art-motion__project-copy')]
-const artPaginationDots = [...document.querySelectorAll('.art-motion__pagination span')]
+const artPaginationDots = [...document.querySelectorAll('.art-motion__pagination button')]
 const reducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)')
 let artMotionFrame = 0
 let activeArtProject = -1
@@ -420,7 +468,7 @@ const updateArtStory = () => {
   const copyTop = (canvasHeight * (.5 + (.14873 * zoom))) - 10
   const copyScale = reducedMotionQuery.matches || isCompact
     ? 1
-    : zoom * (projectIndex === 0 ? 1 : .9594)
+    : zoom * .9594
 
   artMotion.style.setProperty('--art-zoom', zoom.toFixed(5))
   artMotion.style.setProperty('--art-stage-shift', `${stageShift.toFixed(3)}px`)
@@ -435,6 +483,10 @@ const updateArtStory = () => {
     projectCollections.forEach((collection) => {
       collection.forEach((element, index) => element.classList.toggle('is-active', index === projectIndex))
     })
+    artPaginationDots.forEach((dot, index) => {
+      if (index === projectIndex) dot.setAttribute('aria-current', 'true')
+      else dot.removeAttribute('aria-current')
+    })
   }
 }
 
@@ -443,10 +495,49 @@ const requestArtStoryUpdate = () => {
   artMotionFrame = window.requestAnimationFrame(updateArtStory)
 }
 
+const artProjectScrollTargets = [.24, .56, .82]
+
+artPaginationDots.forEach((dot, index) => {
+  dot.addEventListener('click', () => {
+    const storyTop = window.scrollY + artStory.getBoundingClientRect().top
+    const scrollRange = Math.max(1, artStory.offsetHeight - window.innerHeight)
+    window.scrollTo({
+      top: storyTop + (scrollRange * artProjectScrollTargets[index]),
+      behavior: reducedMotionQuery.matches ? 'auto' : 'smooth',
+    })
+  })
+})
+
 window.addEventListener('scroll', requestArtStoryUpdate, { passive: true })
 window.addEventListener('resize', requestArtStoryUpdate)
 reducedMotionQuery.addEventListener('change', requestArtStoryUpdate)
 requestArtStoryUpdate()
+
+const introRevealSection = document.querySelector('.intro-reveal')
+const introRevealItems = [...document.querySelectorAll('.intro-reveal__word, .intro-reveal__shape')]
+let introRevealFrame = 0
+
+const updateIntroReveal = () => {
+  introRevealFrame = 0
+  const sectionRect = introRevealSection.getBoundingClientRect()
+  const scrollRange = Math.max(1, sectionRect.height - window.innerHeight)
+  const progress = reducedMotionQuery.matches ? 1 : clamp(-sectionRect.top / scrollRange)
+  const revealCursor = progress * introRevealItems.length
+
+  introRevealItems.forEach((item, index) => {
+    item.style.setProperty('--reveal', clamp(revealCursor - index).toFixed(3))
+  })
+}
+
+const requestIntroRevealUpdate = () => {
+  if (introRevealFrame) return
+  introRevealFrame = window.requestAnimationFrame(updateIntroReveal)
+}
+
+window.addEventListener('scroll', requestIntroRevealUpdate, { passive: true })
+window.addEventListener('resize', requestIntroRevealUpdate)
+reducedMotionQuery.addEventListener('change', requestIntroRevealUpdate)
+requestIntroRevealUpdate()
 
 const coherenceSection = document.querySelector('.coherence')
 const coherenceWords = [...document.querySelectorAll('.coherence__reveal')]
