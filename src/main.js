@@ -17,6 +17,41 @@ if (antonFontReady) {
 }
 
 document.querySelector('#app').innerHTML = `
+  <header class="hero__header" data-node-id="2197:787">
+    <a class="hero__brand" href="#top" aria-label="ByteCorp Studio home">
+      <img src="/assets/brand-mark.svg" alt="" width="21" height="29">
+    </a>
+
+    <button
+      class="hero__menu-toggle"
+      type="button"
+      aria-label="Open menu"
+      aria-expanded="false"
+      aria-controls="site-menu"
+    >
+      <span class="hero__menu-line"></span>
+      <span class="hero__menu-line"></span>
+      <span class="hero__menu-line"></span>
+    </button>
+
+    <div
+      class="site-menu"
+      id="site-menu"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Site navigation"
+      aria-hidden="true"
+      inert
+    >
+      <nav class="site-menu__nav" aria-label="Main navigation">
+        <a class="site-menu__link" href="#work" style="--menu-index: 0">work</a>
+        <a class="site-menu__link" href="#services" style="--menu-index: 1">services</a>
+        <a class="site-menu__link" href="#team" style="--menu-index: 2">team</a>
+        <a class="site-menu__link" href="#contact" style="--menu-index: 3">contact</a>
+      </nav>
+    </div>
+  </header>
+
   <main>
   <section class="hero" id="top" data-node-id="2197:785">
     <video
@@ -31,41 +66,6 @@ document.querySelector('#app').innerHTML = `
       <source src="/assets/render%203.mp4" type="video/mp4">
     </video>
 
-    <header class="hero__header" data-node-id="2197:787">
-      <a class="hero__brand" href="#top" aria-label="ByteCorp Studio home">
-        <img src="/assets/brand-mark.svg" alt="" width="21" height="29">
-      </a>
-
-      <button
-        class="hero__menu-toggle"
-        type="button"
-        aria-label="Open menu"
-        aria-expanded="false"
-        aria-controls="site-menu"
-      >
-        <span class="hero__menu-line"></span>
-        <span class="hero__menu-line"></span>
-        <span class="hero__menu-line"></span>
-      </button>
-
-      <div
-        class="site-menu"
-        id="site-menu"
-        role="dialog"
-        aria-modal="true"
-        aria-label="Site navigation"
-        aria-hidden="true"
-        inert
-      >
-        <nav class="site-menu__nav" aria-label="Main navigation">
-          <a class="site-menu__link" href="#work" style="--menu-index: 0">work</a>
-          <a class="site-menu__link" href="#services" style="--menu-index: 1">services</a>
-          <a class="site-menu__link" href="#team" style="--menu-index: 2">team</a>
-          <a class="site-menu__link" href="#contact" style="--menu-index: 3">contact</a>
-        </nav>
-      </div>
-    </header>
-
     <div class="hero__content" data-node-id="2201:801">
       <h1 data-node-id="2235:484">We find where tech brands lose revenue</h1>
 
@@ -75,9 +75,9 @@ document.querySelector('#app').innerHTML = `
       </a>
     </div>
 
-    <p class="hero__affiliation" data-node-id="2235:476">
+    <a class="hero__affiliation" href="https://www.bytecorp.io/en" target="_blank" rel="noopener noreferrer" data-node-id="2235:476">
       Part of ByteCorp.io. Focused on experience.
-    </p>
+    </a>
   </section>
 
   <section class="intro-reveal" data-node-id="2239:5321" aria-labelledby="intro-reveal-copy">
@@ -86,7 +86,7 @@ document.querySelector('#app').innerHTML = `
         class="intro-reveal__copy"
         id="intro-reveal-copy"
         data-node-id="2239:5322"
-        aria-label="We help tech brands find what's holding growth back and fix it through brand strategy, identity systems, high-converting websites, and scalable product design. 20+ brands in, the impact has been beyond impressive."
+        aria-label="We help tech brands find what's holding growth back and fix it through brand design. 20+ brands in, the impact has been beyond impressive."
       >
         <span class="intro-reveal__word" aria-hidden="true">We</span>
         <span class="intro-reveal__word" aria-hidden="true">help</span>
@@ -98,7 +98,6 @@ document.querySelector('#app').innerHTML = `
         <span class="intro-reveal__word" aria-hidden="true">find</span>
         <span class="intro-reveal__word" aria-hidden="true">what's</span>
         <span class="intro-reveal__word" aria-hidden="true">holding</span>
-        <br aria-hidden="true">
         <span class="intro-reveal__word" aria-hidden="true">growth</span>
         <span class="intro-reveal__shape" aria-hidden="true" data-node-id="2239:5357">
           <img src="/assets/intro-reveal-arrows.svg" alt="" width="54.0001" height="54.0001">
@@ -109,28 +108,19 @@ document.querySelector('#app').innerHTML = `
         <span class="intro-reveal__word" aria-hidden="true">it</span>
         <span class="intro-reveal__word" aria-hidden="true">through</span>
         <span class="intro-reveal__word" aria-hidden="true">brand</span>
-        <span class="intro-reveal__word" aria-hidden="true">strategy,</span>
-        <span class="intro-reveal__word" aria-hidden="true">identity</span>
-        <span class="intro-reveal__word" aria-hidden="true">systems,</span>
-        <span class="intro-reveal__word" aria-hidden="true">high-converting</span>
-        <span class="intro-reveal__word" aria-hidden="true">websites,</span>
-        <span class="intro-reveal__word" aria-hidden="true">and</span>
-        <span class="intro-reveal__word" aria-hidden="true">scalable</span>
-        <span class="intro-reveal__word" aria-hidden="true">product</span>
         <span class="intro-reveal__word" aria-hidden="true">design.</span>
         <span class="intro-reveal__word" aria-hidden="true">20+</span>
         <span class="intro-reveal__word" aria-hidden="true">brands</span>
-        <span class="intro-reveal__word" aria-hidden="true">in</span>
-        <span class="intro-reveal__shape" aria-hidden="true" data-node-id="2239:5327">
-          <img src="/assets/intro-reveal-dots.svg" alt="" width="128.864" height="54">
-        </span>
-        <span class="intro-reveal__word" aria-hidden="true">,</span>
+        <span class="intro-reveal__word" aria-hidden="true">in,</span>
         <span class="intro-reveal__word" aria-hidden="true">the</span>
         <span class="intro-reveal__word" aria-hidden="true">impact</span>
         <span class="intro-reveal__word" aria-hidden="true">has</span>
         <span class="intro-reveal__word" aria-hidden="true">been</span>
         <span class="intro-reveal__word" aria-hidden="true">beyond</span>
         <span class="intro-reveal__word" aria-hidden="true">impressive.</span>
+        <span class="intro-reveal__shape" aria-hidden="true" data-node-id="2239:5327">
+          <img src="/assets/intro-reveal-dots.svg" alt="" width="128.864" height="54">
+        </span>
       </p>
     </div>
   </section>
@@ -214,6 +204,19 @@ document.querySelector('#app').innerHTML = `
           </div>
         </article>
       </div>
+
+      <article class="work-card work-card--featured">
+        <div class="work-card__media work-card__media--wide">
+          <img src="/assets/heavysouq.png" alt="Heavy Souq equipment-rental website displayed on a laptop" width="1921" height="1441" loading="lazy" decoding="async">
+        </div>
+        <div class="work-card__details work-card__details--with-quote">
+          <div>
+            <h3>HEAVY SOUQ</h3>
+            <p>Construction</p>
+          </div>
+          <p class="work-card__description text-measure">Heavy Souq helps contractors and builders find, book and manage heavy equipment without the delays. We connect every machine, owner and site on one platform that moves as fast as the work does.</p>
+        </div>
+      </article>
     </div>
   </section>
 
@@ -250,8 +253,8 @@ document.querySelector('#app').innerHTML = `
                   <img class="motion-card__layer motion-card__cycle motion-card__cycle--three" src="/assets/motion/layer-cycle-3.png" alt="" width="469" height="264" data-node-id="2206:8747">
                   <img class="motion-card__logo" src="/assets/motion/frctn-logo.svg" alt="" width="186" height="62" data-node-id="2206:8748">
                 </div>
-                <video class="motion-card__project" data-project="1" src="/assets/motion/shukar-hai-screen.mp4" width="603" height="340" autoplay muted loop playsinline preload="auto" aria-hidden="true" data-node-id="2206:8940"></video>
-                <video class="motion-card__project" data-project="2" src="/assets/motion/autilent-screen.mp4" width="736" height="414" autoplay muted loop playsinline preload="auto" aria-hidden="true" data-node-id="2206:8975"></video>
+                <video class="motion-card__project" data-project="1" src="/assets/motion/shukar-hai-screen.mp4" width="603" height="340" muted loop playsinline preload="auto" aria-hidden="true" data-node-id="2206:8940"></video>
+                <video class="motion-card__project" data-project="2" src="/assets/motion/autilent-screen.mp4" width="736" height="414" muted loop playsinline preload="auto" aria-hidden="true" data-node-id="2206:8975"></video>
               </div>
             </div>
           </div>
@@ -390,27 +393,27 @@ document.querySelector('#app').innerHTML = `
   </section>
   </main>
 
-  <footer class="site-footer" id="contact" data-node-id="2117:15020">
-    <section class="footer-pitch" aria-labelledby="footer-pitch-title" data-node-id="2117:15021">
-      <img class="footer-pitch__grid" src="/assets/footer/grid.png" alt="" width="1440" height="632" aria-hidden="true" data-node-id="2117:15022">
-      <h2 class="footer-pitch__headline" id="footer-pitch-title" data-node-id="2117:15822">
-        <span class="footer-pitch__line footer-pitch__line--one">
-          <span>Let’s build</span>
-          <img class="footer-pitch__red-mark" src="/assets/footer/red-mark.svg" alt="" width="224" height="129" aria-hidden="true" data-node-id="2117:15823">
+  <section class="footer-pitch" id="pre-footer" aria-labelledby="footer-pitch-title" data-node-id="2161:21035">
+      <img class="footer-pitch__grid" src="/assets/footer/grid.png" alt="" width="1440" height="632" aria-hidden="true" data-node-id="2161:21036">
+      <h2 class="footer-pitch__headline" id="footer-pitch-title" data-node-id="2263:528">
+        <span class="footer-pitch__line footer-pitch__line--one" data-node-id="2263:529">
+          <span data-node-id="2263:530">Find what’s</span>
+          <img class="footer-pitch__red-mark" src="/assets/footer/red-mark.svg" alt="" width="224" height="129" aria-hidden="true" data-node-id="2263:531">
         </span>
-        <span class="footer-pitch__line footer-pitch__line--two">
-          <span>Something</span>
-          <span class="footer-pitch__blue-mark" aria-hidden="true"><img src="/assets/footer/blue-mark.svg" alt="" width="131" height="153" data-node-id="2117:15827"></span>
-          <span class="footer-pitch__big">Big.</span>
+        <span class="footer-pitch__line footer-pitch__line--two" data-node-id="2263:535">
+          <span data-node-id="2263:536">Holding you</span>
+          <span class="footer-pitch__blue-mark" aria-hidden="true" data-node-id="2263:537"><img src="/assets/footer/blue-mark.svg" alt="" width="153" height="131.5"></span>
+          <span class="footer-pitch__big" data-node-id="2263:539">Back</span>
         </span>
       </h2>
 
-      <a class="footer-pitch__cta" href="#contact" data-node-id="2117:15828">
-        <span>Start a conversation</span>
-        <img src="/assets/footer/arrow-right.svg" alt="" width="24" height="24" data-node-id="2117:15830">
+      <a class="footer-pitch__cta" href="#contact" data-node-id="2261:489">
+        <span data-node-id="2261:491">Get your brand audited</span>
+        <img src="/assets/footer/arrow-right.svg" alt="" width="24" height="24" data-node-id="2261:492">
       </a>
-    </section>
+  </section>
 
+  <footer class="site-footer" id="contact" data-node-id="2117:15020">
     <div class="footer-info" data-node-id="2117:15831">
       <nav class="footer-links footer-links--studio" aria-label="Studio links" data-node-id="2117:15832">
         <p>Studio</p>
@@ -452,12 +455,14 @@ if (window.location.hash) {
 }
 
 const menuToggle = document.querySelector('.hero__menu-toggle')
+const heroHeader = document.querySelector('.hero__header')
 const siteMenu = document.querySelector('.site-menu')
 const siteMenuLinks = [...siteMenu.querySelectorAll('a[href]')]
 let isMenuOpen = false
 
 const setMenuState = (open) => {
   isMenuOpen = open
+  heroHeader.classList.remove('is-hidden')
   menuToggle.setAttribute('aria-expanded', String(open))
   menuToggle.setAttribute('aria-label', open ? 'Close menu' : 'Open menu')
   siteMenu.setAttribute('aria-hidden', String(!open))
@@ -501,10 +506,47 @@ document.addEventListener('keydown', (event) => {
   focusLoop[nextIndex].focus()
 })
 
+let lastNavScrollY = Math.max(0, window.scrollY)
+let navScrollDistance = 0
+let navScrollDirection = 0
+let navScrollFrame = 0
+
+const updateNavVisibility = () => {
+  navScrollFrame = 0
+  const currentScrollY = Math.max(0, window.scrollY)
+  const delta = currentScrollY - lastNavScrollY
+  const direction = Math.sign(delta)
+
+  if (isMenuOpen || currentScrollY <= 24) {
+    heroHeader.classList.remove('is-hidden')
+    navScrollDistance = 0
+  } else if (direction) {
+    if (direction !== navScrollDirection) navScrollDistance = 0
+    navScrollDirection = direction
+    navScrollDistance += delta
+
+    if (navScrollDistance >= 18) {
+      heroHeader.classList.add('is-hidden')
+      navScrollDistance = 0
+    } else if (navScrollDistance <= -10) {
+      heroHeader.classList.remove('is-hidden')
+      navScrollDistance = 0
+    }
+  }
+
+  lastNavScrollY = currentScrollY
+}
+
+window.addEventListener('scroll', () => {
+  if (navScrollFrame) return
+  navScrollFrame = window.requestAnimationFrame(updateNavVisibility)
+}, { passive: true })
+
 const heroVideo = document.querySelector('.hero__video')
 
 const artMotion = document.querySelector('.art-motion')
 const artStory = document.querySelector('.art-motion__story')
+const artShowcase = document.querySelector('.art-motion__showcase')
 const artCanvas = document.querySelector('.art-motion__canvas')
 const artProjects = [...document.querySelectorAll('.motion-card__project')]
 const artProjectCopies = [...document.querySelectorAll('.art-motion__project-copy')]
@@ -512,6 +554,7 @@ const artPaginationDots = [...document.querySelectorAll('.art-motion__pagination
 const reducedMotionQuery = window.matchMedia('(prefers-reduced-motion: reduce)')
 let artMotionFrame = 0
 let activeArtProject = -1
+let isArtShowcaseVisible = false
 
 const clamp = (value, minimum = 0, maximum = 1) => Math.min(maximum, Math.max(minimum, value))
 
@@ -527,6 +570,23 @@ const interpolateStops = (progress, stops) => {
   }
 
   return stops.at(-1)[1]
+}
+
+const syncArtProjectPlayback = () => {
+  const shouldPlay = isArtShowcaseVisible && !document.hidden
+
+  artProjects.forEach((project, index) => {
+    if (!(project instanceof HTMLVideoElement)) return
+
+    project.pause()
+    try {
+      project.currentTime = 0
+    } catch {}
+
+    if (shouldPlay && index === activeArtProject) {
+      project.play().catch(() => {})
+    }
+  })
 }
 
 const updateArtStory = () => {
@@ -567,6 +627,7 @@ const updateArtStory = () => {
       if (index === projectIndex) dot.setAttribute('aria-current', 'true')
       else dot.removeAttribute('aria-current')
     })
+    syncArtProjectPlayback()
   }
 }
 
@@ -576,6 +637,16 @@ const requestArtStoryUpdate = () => {
 }
 
 const artProjectScrollTargets = [.24, .56, .82]
+
+const artShowcaseObserver = new IntersectionObserver(([entry]) => {
+  isArtShowcaseVisible = entry.isIntersecting
+  artMotion.classList.toggle('is-in-view', isArtShowcaseVisible)
+  syncArtProjectPlayback()
+}, { threshold: .15 })
+
+artShowcaseObserver.observe(artShowcase)
+
+document.addEventListener('visibilitychange', syncArtProjectPlayback)
 
 artPaginationDots.forEach((dot, index) => {
   dot.addEventListener('click', () => {
